@@ -1,43 +1,98 @@
 <!DOCTYPE html>
-<html lang="ja">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="これは全く新しい英語塾です！老若男女誰でもWelcomeの地域密着型教室となります！">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global English Academy</title>
-    <link rel="stylesheet" href="css/style.css">
-
+  <title>ヌンチャクコマンドー</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
-
 <body>
-    <header>
-        <div>
-            <!-- 見出し -->
-            <h1><img src="images\logo.png" alt="Global English Academy"></h1>
-        </div>
-        <!-- メインナビゲーション -->
-        <nav>
-            <ul><!-- 箇条書きリスト -->
-                <li><a href="">当塾の強み</a></li>
-                <li><a href="">コース・料金</a></li>
-                <li><a href="">お問合せ</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- 最大幅を決めるクラス -->
-        <div class="wrapper">
-            <!-- メインビジュアル -->
-            <section>
-                <!-- <img src="images\main-visual.png" alt="メインビジュアル"> -->
-                <p class="main-catch">あなたの世界を広げる、<span>本物の英語力</span>を。</p>
-                <p>初心者からビジネスレベルまで、あなたの目標を全力サポートします。</p>
-                <a  class="cta-button" href="">まずは無料カウンセリングから</a>
-                
-            </section>
-        </div>
-    </main>
-</body>
 
+<header id="hero" style="height: 100vh; background-image: url(top.png); background-size: cover; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+  <div class="hero-overlay"></div> 
+  <h1>届け、まだ見ぬ“おもしろい”へ。</h1>
+  <p>ボードゲーム制作、写真・映像制作、マネー顧問。<br>  
+ジャンルの壁を越えて、あなたのアイデアと可能性をカタチにする<br>  
+多目的クリエイティブチーム「ヌンチャクコマンドー」。</p>
+  <nav>
+    <a href="#about">ABOUT</a> |
+    <a href="#service">SERVICE</a> |
+    <a href="#works">WORKS</a> |
+    <a href="#team">TEAM</a> |
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<!-- ABOUTセクション -->
+<section id="about" style="padding: 60px 20px;">
+  <h2 style="text-align: center; font-size: 2em; margin-bottom: 40px;">
+    ヌンチャクコマンドーとは？
+  </h2>
+
+  <div style="display: flex; max-width: 960px; margin: 0 auto; align-items: center;">
+    <div style="flex: 1; padding: 10px;">
+      <img src="Logo_CL.png" alt="チームイメージ" style="width: 100%; border-radius: 8px;">
+    </div>
+    <div style="flex: 1; padding: 20px;">
+      <p>
+        ボードゲーム制作を軸に、映像制作、写真、マネー顧問など多才なスキルで<br>
+        “おもしろい”をカタチにします。<br>
+        チームで動き、企て、楽しみながら、挑戦する人たちを支える<br>
+        多目的クリエイティブチームです。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICEセクション -->
+<section id="service">
+  <h2>やってること、けっこう多めです。</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="service-card">🎲 ボードゲーム制作</div>
+    <div class="service-card">📷 映像・写真制作</div>
+    <div class="service-card">💰 マネー顧問</div>
+    <div class="service-card">🧠 プロジェクト伴走</div>
+  </div>
+</section>
+
+<!-- WORKSセクション -->
+<section id="works">
+  <h2>これまでの“おもしろい”たち</h2>
+  <div class="gallery">
+    <div class="work-card">
+      <img src="KB_main.png" alt="必殺技発動！"width="300">
+      <p>ボードゲーム『必殺技発動！』：企画〜クラファン〜製造</p>
+    </div>
+    <div class="work-card">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-W4IjiIBJTo?si=iOLSWO4CAMU1f0rE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>商品PR動画：演出・撮影・編集</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAMセクション -->
+<section id="team">
+  <h2>誰がやってるの？</h2>
+  <div style="display: flex;">
+    <div class="member-card">
+      <img src="iconpondaikon.png" alt="ぽん大根">
+      <h3>ぽん大根</h3>
+      <p>PM兼なんでも屋<br>全部やってみたい。そういう人、好きです。</p>
+    </div>
+    <!-- 他のメンバーを追加 -->
+  </div>
+</section>
+
+<!-- CONTACTセクション -->
+<section id="contact">
+  <h2>まずは、話してみませんか？</h2>
+  <p>仕事のご相談も、面白い企画の雑談も大歓迎です。</p>
+  <p>📧 NunchakuCommando@gmail.com<br>
+     🐦 X: @Nun_C_ ／ 📷 Instagram:</p>
+</section>
+
+<!-- フッター -->
+<footer>
+  <p>© Nunchaku Commando 2025 | 埼玉県ふじみ野市市沢1-11-40-105</p>
+</footer>
+
+</body>
 </html>
