@@ -241,3 +241,130 @@ footer {
     transform: translate(-50%, -60%) rotate(-135deg);
 }
 
+/* -------------------
+   レスポンシブ (1000px以下)
+------------------- */
+
+/* #hero（トップ画像＋キャッチ）をモバイル対応 */
+#hero {
+  padding: 0 16px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 48px;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 4px 8px;
+    font-size: 14px;
+  }
+}
+
+/* .about-inner の横並び → 縦並びに切り替え */
+.about-inner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .about-inner img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* .service-card を1列 or 2列に並び替える */
+.service-card {
+  width: 200px;
+  margin: 12px;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 90%;
+    margin: 12px auto;
+  }
+}
+
+/* .member-card（チーム紹介）も縦に */
+#team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    margin-bottom: 24px;
+  }
+}
+
+/* -----------------------------
+  📱 Responsive (max-width: 768px)
+------------------------------ */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  #hero p {
+    font-size: 16px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 4px 8px;
+    font-size: 14px;
+  }
+
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .about-inner img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .service-card {
+    width: 90%;
+    margin: 12px auto;
+  }
+
+  #team {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    margin-bottom: 24px;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto;
+  }
+}
